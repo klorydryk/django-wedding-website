@@ -1,0 +1,20 @@
+@font-face{
+    font-family: 'Intro H1';
+    src: url('../fonts/intro-rust-h1.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Intro shade';
+    src: url('../fonts/intro-rust-base-shade.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Intro book';
+    src: url('../fonts/intro-rust-book-base.otf');
+    font-weight: normal;
+    font-style: normal;
+}

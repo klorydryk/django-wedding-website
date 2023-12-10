@@ -27,13 +27,10 @@
                         <a class="page-scroll" href="#event">Le mariage</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#niagara">Château du Vivier</a>
+                        <a class="page-scroll" href="#niagara">RSPVP</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#other-stuff">Informations diverses</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#other-stuff">Liste des cadeaux</a>
                     </li>
                 </ul>
             </div>
@@ -45,13 +42,21 @@
     <header id="main-header">
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>Save the date !</h1>
-                {% comment %}
+                <div class="header-date">07.06.24</div>
+                <h1>Save
+                    the
+                    date</h1>
+                <hr>
+                <!--{% comment %}
                 <hr>
                 <h2>It's wedding week!</h2>
                 <a href="#welcome" class="btn btn-info btn-xl page-scroll">Bienvenue !</a>
                 <a href="#event" class="btn btn-primary btn-xl page-scroll">Vendredi</a>
-                {% endcomment %}
+                {% endcomment %}-->
+                <div class="header-div">
+                    Nous nous
+                    marions !
+                </div>
             </div>
         </div>
     </header>
@@ -59,7 +64,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Nous allons nous marier !</h2>
+                    <!--<h2 class="section-heading">Nous allons nous marier !</h2>
                     <hr>
                     <p>
                         Bonjour à nos familles et à nos ami·e·s
@@ -70,12 +75,61 @@
                     <p>
                         Hâte de vous retrouver toutes et tous !
                     </p>
-                    <p class="pull-right">- Angel et Benoît</p>
+                    <p class="pull-right">- Angel et Benoît</p>-->
+                    <!--<hr style="width: 127px;"><h2>Réservez
+                        votre
+                        7 juin 2024</h2>-->
+                    <hr class="hr-text"
+                        data-content="Réservez
+                    votre
+                    7 juin 2024">
+                    <div class="text-content">
+                        Nous sommes heureux de vous inviter à notre mariage le vendredi 7 juin 2024 au château du Vivier, à Fontenay en Trésigny (77).
+
+                        Une cérémonie laïque est prévue avant le cocktail d'ouverture des festivités. Nouis vous attendons nombreux !
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="no-padding" id="navigation">
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <hr class="hr-text"
+                        data-content="Les
+                        informations
+                        pratiques">
+
+                    <div class="text-content">
+                        Voues êtes attendus à partir de 16h au château royal de Viver, Fontenay-Trésigny (77).
+                        Une cérémonie laïque ouvrira le bal pour sceller nos voeux avant un cocktail d'honneur. Pour célébrer avec nous ce moment de bonheur, venez havillés de vos plus beaux costumes en rouge ou or. Afin de mieux gérer ce beau jour de fête, merci de répondre à l'invitation avant le ...
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <hr class="hr-text"
+                        data-content="Les
+                        informations
+                        pratiques">
+
+                    <div class="text-content">
+                        Voues êtes attendus à partir de 16h au château royal de Viver, Fontenay-Trésigny (77).
+                        Une cérémonie laïque ouvrira le bal pour sceller nos voeux avant un cocktail d'honneur. Pour célébrer avec nous ce moment de bonheur, venez havillés de vos plus beaux costumes en rouge ou or. Afin de mieux gérer ce beau jour de fête, merci de répondre à l'invitation avant le ...
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--<section class="no-padding" id="navigation">
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
@@ -116,7 +170,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
     {% include 'partials/event.html' %}
     <section id="niagara">
         {% include 'partials/niagara.html' %}
