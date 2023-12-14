@@ -32,7 +32,6 @@ hr {
     border: 0;
     text-align: center;
     height: auto;
-
     font-family: 'Intro shade', sans-serif;
     white-space: pre-line;
     font-size: 44px;
@@ -56,10 +55,17 @@ hr {
 
     padding: 0 .5em;
     line-height: 1.5em;
-
+    background: inherit;
     color: #e42626;
 }
 
+.rspvp, .gifts {
+    background-image: url('../images/fond-texture-top.png');
+}
+
+.info {
+    background-color: #fffbeb;
+}
 
 hr.light {
     border-color: #fff;
@@ -151,12 +157,8 @@ aside {
 }
 
 .navbar-default {
-    border-color: rgba(34,34,34,.05);
+    border-color: rgba(0, 0, 0, 0);
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    background-color: #fff;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
 }
 
 .navbar-default .navbar-header .navbar-brand {
@@ -214,7 +216,7 @@ aside {
 
     .navbar-default .navbar-header .navbar-brand:hover,
     .navbar-default .navbar-header .navbar-brand:focus {
-        color: #fff;
+        color: rgb(217,43,45);
     }
 
     .navbar-default .nav > li>a,
@@ -225,13 +227,19 @@ aside {
 
     .navbar-default .nav > li>a:hover,
     .navbar-default .nav>li>a:focus:hover {
-        /*color: rgb(28,56,81);*/
-        color: rgb(217,43,45);
+        color: #f05f40;
+        /*color: rgb(217,43,45);*/
+    }
+
+    a:focus, a:active {
+        outline: 0;
+        border: none;
+        -moz-outline-style: none;
     }
 
     .navbar-default.affix {
-        border-color: rgba(34,34,34,.05);
-        background-color: #fff;
+        border-color: rgba(0, 0, 0,0);
+        background-color: transparent;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand {
@@ -285,7 +293,7 @@ section {
     height: 990px;
 }
 
-#info {
+#rspvp {
     height: 1028px;
 }
 
