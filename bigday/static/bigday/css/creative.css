@@ -8,14 +8,13 @@ html,
 body {
     width: 100%;
     height: 100%;
-    /*font-size: 16px;*/
     color: #e42626;
 }
 
 body {
     font-family: 'Gill Sans MT', sans-serif;
-    background-image: url('../images/polaroids-fleurs.png'), url('../images/fond-texture.png');
-    background-repeat: no-repeat, repeat;
+    background-image: url('../images/polaroid-fleurs.png'), url('../images/fond-texture.png');
+    background-repeat: no-repeat, no-repeat;
     background-position-y: -5%, 0%;
 }
 
@@ -60,11 +59,12 @@ hr {
 }
 
 .rspvp, .gifts {
-    background-image: url('../images/fond-texture-top.png');
+    background-image: url('../images/fond-texture.png');
+    margin-top:25%;
 }
 
 .info {
-    background-color: #fffbeb;
+    background-color: #ffff;
 }
 
 hr.light {
@@ -98,20 +98,20 @@ h2 {
 }
 
 p {
-    margin-bottom: 20px;
     font-size: 16px;
-    line-height: 1.5;
 }
 
 .text-content {
     letter-spacing: 1px;
-    font-size:31px;
+    font-size:26px;
     white-space: pre-line;
+    line-height: 1.2;
 }
 
 .navbar-default {
     border-color: rgba(0, 0, 0, 0);
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    letter-spacing: 1px;
 }
 
 .navbar-default .navbar-header .navbar-brand {
@@ -222,11 +222,12 @@ section {
 }
 
 #rspvp {
-    height: 1028px;
+    background: #ffff;
 }
 
 #gifts {
     height: 985px;
+    background-image: url('../images/fond-texture.png');
 }
 
 header .header-content {
@@ -272,6 +273,7 @@ header .header-content {
 .btn {
     border: 0;
     border-radius: 34px;
+    margin-top:5%;
 }
 
 .btn-primary {
