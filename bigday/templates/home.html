@@ -1,154 +1,168 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 {% block page_head %}
-    <!-- Custom CSS -->
-    <link href="{% static 'bigday/css/creative.css' %}" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="{% static 'bigday/css/creative.css' %}" rel="stylesheet">
 {% endblock %}
 {% block page_content %}
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    Save the date
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">
+                Save the date
+            </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="#main-header">
+                        {% trans 'Accueil' %}
+                    </a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#welcome">
+                        {% trans 'Le mariage' %}
+                    </a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#rspvp">
+                        RSPVP
+                    </a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#gifts">
+                        {% trans 'Liste des cadeaux' %}
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+{% block main %}
+<header id="main-header">
+    <div class="header-content">
+        <div class="header-content-inner">
+            <div class="header-date">07.06.24</div>
+            <h1>Save
+                the
+                date</h1>
+            <hr>
+
+            <div class="header-div">
+                {% blocktrans %} Nous nous
+                marions ! {% endblocktrans %}
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="" id="welcome">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <hr class="hr-text rspvp"
+                    data-content="{% blocktrans %} Réservez
+                    votre
+                    7 juin 2024 {% endblocktrans %}">
+                <div class="text-content">
+                    {% blocktrans %} Nous sommes heureux de vous inviter à notre
+                    mariage le vendredi 7 juin 2024 au château du Vivier,
+                    à Fontenay-Trésigny (77).
+
+                    Une cérémonie laïque est prévue avant le cocktail d'ouverture des festivités.
+                    Nous vous attendons nombreux ! {% endblocktrans %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="rspvp">
+    <div class="map-container">
+
+        <div class="text-content">
+            <iframe width="70%"
+                    height="700px"
+                    frameborder="1"
+                    allowfullscreen
+                    allow="geolocation"
+                    src="//umap.openstreetmap.fr/fr/map/carte-sans-nom_999518?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true">
+
+            </iframe>
+            <p>
+                <a href="//umap.openstreetmap.fr/fr/map/carte-sans-nom_999518?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true">
+                    {% trans 'Voir en plein écran' %}
                 </a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#main-header">Accueil</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#welcome">Le mariage</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#rspvp">RSPVP</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#gifts">Liste des cadeaux</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+            </p>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
-    {% block main %}
-    <header id="main-header">
-        <div class="header-content">
-            <div class="header-content-inner">
-                <div class="header-date">07.06.24</div>
-                <h1>Save
-                    the
-                    date</h1>
-                <hr>
 
-                <div class="header-div">
-                    Nous nous
-                    marions !
-                </div>
+        <div class="info-container">
+            <hr class="hr-text info"
+                data-content="{% blocktrans %} Les
+                    informations
+                    pratiques {% endblocktrans %}">
+            <div class="text-content">
+                <span style="font-weight: bold;"> {% trans 'Vous êtes attendus à partir de 16h au château royal de Viver, Fontenay-Trésigny (77).' %} </span>
+                {% blocktrans %} Une cérémonie laïque ouvrira le bal pour sceller nos voeux avant un cocktail d'honneur. Pour célébrer avec nous ce moment de bonheur, venez habillés de vos plus beaux costumes en rouge ou or.
+                Afin de mieux gérer ce beau jour de fête, merci de répondre à l'invitation avant le ... {% endblocktrans %}
             </div>
-        </div>
-    </header>
-
-    <section class="" id="welcome">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <hr class="hr-text rspvp"
-                        data-content="Réservez
-                                    votre
-                                    7 juin 2024">
-                    <div class="text-content">
-                        Nous sommes heureux de vous inviter à notre mariage le vendredi 7 juin 2024 au château du Vivier, à Fontenay en Trésigny (77).
-
-                        Une cérémonie laïque est prévue avant le cocktail d'ouverture des festivités. Nouis vous attendons nombreux !
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="rspvp">
-        <div class="map-container">
 
             <div class="text-content">
-                <iframe width="70%"
-                        height="700px"
-                        frameborder="1"
-                        allowfullscreen
-                        allow="geolocation"
-                        src="//umap.openstreetmap.fr/fr/map/carte-sans-nom_999518?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true">
-
-                </iframe>
-                <p>
-                    <a href="//umap.openstreetmap.fr/fr/map/carte-sans-nom_999518?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true">
-                        Voir en plein écran
-                    </a>
-                </p>
+                <button class="btn btn-lg text-uppercase btn-primary ">
+                    {% trans 'Je dis oui'%}
+                </button>
             </div>
+        </div>
 
-            <div class="info-container">
-                <hr class="hr-text info"
-                    data-content="Les
-                    informations
-                    pratiques">
+    </div>
+</section>
+
+<section id="gifts">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-lg-offset-2 text-center">
+
+                <hr class="hr-text gifts"
+                    data-content="{% blocktrans %} Liste
+                        des
+                        cadeaux {% endblocktrans %}">
+
                 <div class="text-content">
-                    <span style="font-weight: bold;"> Vous êtes attendus à partir de 16h au château royal de Viver, Fontenay-Trésigny (77). </span>
-                    Une cérémonie laïque ouvrira le bal pour sceller nos voeux avant un cocktail d'honneur. Pour célébrer avec nous ce moment de bonheur, venez havillés de vos plus beaux costumes en rouge ou or. Afin de mieux gérer ce beau jour de fête, merci de répondre à l'invitation avant le ...
+                    {% blocktrans %} Nous avons fait le choix de ne pas faire de liste de mariage car nous souhaitons partir en Chine pour notre Lune de Miel !
+                    Une urne sera mise à disposition le jour J. Si vous ne pouvez pas être présent le jour de notre mariage mais que vous souhaitez tout de même nous offrir un quelque chose, merci de nous contacter. {% endblocktrans %}
                 </div>
 
                 <div class="text-content">
                     <button class="btn btn-lg text-uppercase btn-primary ">
-                        Je dis oui
+                        Contact
                     </button>
                 </div>
             </div>
 
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="gifts">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-
-                    <hr class="hr-text gifts"
-                        data-content="Liste
-                        des
-                        cadeaux">
-
-                    <div class="text-content">
-                        Nous avons fait le choix de ne pas faire de iste de mariage car nous souhaitons partir en Chine pour notre Lune de Miel !
-                        Une urne sera mise à disposition le jour J. Si vous ne pouvez pas être présent le jour de notre mariage mais que vous souhaitez tout de même nous offrir un quelque chose, merci de nous contacter.
-                    </div>
-
-                    <div class="text-content">
-                        <button class="btn btn-lg text-uppercase btn-primary ">
-                            Contact
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    {% endblock %}
+{% endblock %}
 {% endblock %}
 {% block page_js %}
-    <!-- Plugin JavaScript -->
-    <!-- Easing is for the vertical scroll animations -->
-    <script src="{% static 'creative/js/jquery.easing.min.js' %}"></script>
-    <!-- Automatically fit text based on screen size.-->
-    <script src="{% static 'creative/js/jquery.fittext.js' %}"></script>
-    <!-- Custom Theme JavaScript -->
-    <script src="{% static 'creative/js/creative.js' %}"></script>
+<!-- Plugin JavaScript -->
+<!-- Easing is for the vertical scroll animations -->
+<script src="{% static 'creative/js/jquery.easing.min.js' %}"></script>
+<!-- Automatically fit text based on screen size.-->
+<script src="{% static 'creative/js/jquery.fittext.js' %}"></script>
+<!-- Custom Theme JavaScript -->
+<script src="{% static 'creative/js/creative.js' %}"></script>
 {% endblock %}

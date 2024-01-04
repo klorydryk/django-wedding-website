@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
-
+from django.utils.translation import gettext_lazy as _
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -29,13 +29,16 @@ SECRET_KEY = 'u7!-y4k1c6b44q507nr_l+c^12o7ur++cpzyn!$65w^!gum@h%'
 DEBUG = True
 
 # Set to "console" for console output of emails or to "smtp" to send real mails
-MAIL_BACKEND = "console"
+MAIL_BACKEND = "smtp"
 
 ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
 CSRF_TRUSTED_ORIGINS = ["https://127.0.0.1"]
 
 DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
 
+LOCALE_PATHS = [
+   os.path.join(BASE_DIR, 'locale')
+]
 
 # Application definition
 
@@ -57,6 +60,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.locale.LocaleMiddleware'
 ]
 
 ROOT_URLCONF = 'bigday.urls'
@@ -115,7 +119,13 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'FR-fr'
+LANGUAGE_CODE = 'fr-FR'
+
+LANGUAGES = (
+   ('en', _('English')),
+   ('fr', _('French')),
+   ('zh', _('Chinese'))
+)
 
 TIME_ZONE = 'Europe/Paris'
 

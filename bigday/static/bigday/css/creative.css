@@ -16,6 +16,8 @@ body {
     background-image: url('../images/polaroid-fleurs.png'), url('../images/fond-texture.png');
     background-repeat: no-repeat, no-repeat;
     background-position-y: -5%, 0%;
+    /*background-position-x: center, 0%;
+    -webkit-background-size: cover;*/
 }
 
 hr {
@@ -34,7 +36,7 @@ hr {
     font-family: 'Intro shade', sans-serif;
     white-space: pre-line;
     font-size: 44px;
-    width: auto;
+    width: 595px;
 }
 
 .hr-text::before {
