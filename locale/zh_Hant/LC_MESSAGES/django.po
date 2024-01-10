@@ -8,15 +8,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-04 03:20+0100\n"
+"POT-Creation-Date: 2024-01-10 01:23+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: bigday/settings.py:125
 msgid "English"
@@ -27,94 +27,93 @@ msgid "French"
 msgstr ""
 
 #: bigday/settings.py:127
-msgid "Chinese"
+msgid "Chinese Traditional"
 msgstr ""
 
-#: bigday/templates/home.html:29
+#: bigday/settings.py:128
+msgid "Chinese Simplified"
+msgstr ""
+
+#: bigday/templates/home.html:37
 msgid "Accueil"
 msgstr ""
 
-#: bigday/templates/home.html:34
+#: bigday/templates/home.html:42
 msgid "Le mariage"
 msgstr ""
 
-#: bigday/templates/home.html:44
+#: bigday/templates/home.html:52
 msgid "Liste des cadeaux"
 msgstr ""
 
-#: bigday/templates/home.html:64
+#: bigday/templates/home.html:72
 msgid ""
 " Nous nous\n"
 "                marions ! "
 msgstr ""
 
-#: bigday/templates/home.html:76
+#: bigday/templates/home.html:84
 msgid ""
 " Réservez\n"
 "                    votre\n"
 "                    7 juin 2024 "
 msgstr ""
 
-#: bigday/templates/home.html:80
+#: bigday/templates/home.html:88
 msgid ""
-" Nous sommes heureux de vous inviter à notre mariage le vendredi 7 juin 2024 "
-"au château du\n"
-"                    Vivier, à\n"
-"                    Fontenay en Trésigny (77).\n"
+" Nous sommes heureux de vous inviter à notre\n"
+"                    mariage le vendredi 7 juin 2024 au château du Vivier,\n"
+"                    à Fontenay-Trésigny (77).\n"
 "\n"
 "                    Une cérémonie laïque est prévue avant le cocktail "
-"d'ouverture des festivités. Nous vous attendons\n"
-"                    nombreux ! "
+"d'ouverture des festivités.\n"
+"                    Nous vous attendons nombreux ! "
 msgstr ""
 
-#: bigday/templates/home.html:106
+#: bigday/templates/home.html:114
 msgid "Voir en plein écran"
 msgstr ""
 
-#: bigday/templates/home.html:113
+#: bigday/templates/home.html:121
 msgid ""
 " Les\n"
 "                    informations\n"
 "                    pratiques "
 msgstr ""
 
-#: bigday/templates/home.html:117
+#: bigday/templates/home.html:125
 msgid ""
 "Vous êtes attendus à partir de 16h au château royal de Viver, Fontenay-"
 "Trésigny (77)."
 msgstr ""
 
-#: bigday/templates/home.html:118
+#: bigday/templates/home.html:126
 msgid ""
 " Une cérémonie laïque ouvrira le bal pour sceller nos voeux avant un "
-"cocktail d'honneur. Pour célébrer\n"
-"                avec nous ce moment de bonheur, venez habillés de vos plus "
-"beaux costumes en rouge ou or. Afin de mieux\n"
-"                gérer ce beau jour de fête, merci de répondre à l'invitation "
-"avant le ... "
+"cocktail d'honneur. Pour célébrer avec nous ce moment de bonheur, venez "
+"habillés de vos plus beaux costumes en rouge ou or.\n"
+"                Afin de mieux gérer ce beau jour de fête, merci de répondre "
+"à l'invitation avant le ... "
 msgstr ""
 
-#: bigday/templates/home.html:125
+#: bigday/templates/home.html:132
 msgid "Je dis oui"
 msgstr ""
 
-#: bigday/templates/home.html:139
+#: bigday/templates/home.html:146
 msgid ""
 " Liste\n"
 "                        des\n"
 "                        cadeaux "
 msgstr ""
 
-#: bigday/templates/home.html:144
+#: bigday/templates/home.html:151
 msgid ""
 " Nous avons fait le choix de ne pas faire de liste de mariage car nous "
-"souhaitons partir en\n"
-"                    Chine pour\n"
-"                    notre Lune de Miel !\n"
+"souhaitons partir en Chine pour notre Lune de Miel !\n"
 "                    Une urne sera mise à disposition le jour J. Si vous ne "
-"pouvez pas être présent le jour de notre\n"
-"                    mariage mais que vous souhaitez tout de même nous offrir "
-"un quelque chose, merci de nous contacter. "
+"pouvez pas être présent le jour de notre mariage mais que vous souhaitez "
+"tout de même nous offrir un quelque chose, merci de nous contacter. "
 msgstr ""
 
 #: venv/lib/python3.9/site-packages/django/contrib/messages/apps.py:15

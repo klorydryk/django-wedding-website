@@ -44,5 +44,8 @@
         }
     })
 
+    $("#language").on("change", () => {
+        $("#form-lang").submit();
+    })
 
 })(jQuery); // End of use strict

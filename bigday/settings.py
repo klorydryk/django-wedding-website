@@ -124,7 +124,8 @@ LANGUAGE_CODE = 'fr-FR'
 LANGUAGES = (
    ('en', _('English')),
    ('fr', _('French')),
-   ('zh', _('Chinese'))
+   ("zh-hans", _('Simplified Chinese')),
+   ("zh-hant", _('Traditional Chinese'))
 )
 
 TIME_ZONE = 'Europe/Paris'

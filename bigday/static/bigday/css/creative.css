@@ -105,9 +105,9 @@ p {
 
 .text-content {
     letter-spacing: 1px;
-    font-size:26px;
+    font-size: 24px;
     white-space: pre-line;
-    line-height: 1.2;
+    line-height: 1.3;
 }
 
 .navbar-default {
@@ -289,6 +289,10 @@ header .header-content {
     text-align: center;
 }
 
+.cta {
+    width: 274px;
+}
+
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary.focus,
@@ -339,4 +343,8 @@ body {
 
 .info-container hr {
     width: 595px;
+}
+
+.form-control {
+    color: inherit;
 }
