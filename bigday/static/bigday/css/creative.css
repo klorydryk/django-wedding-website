@@ -13,11 +13,7 @@ body {
 
 body {
     font-family: 'Gill Sans MT', sans-serif;
-    background-image: url('../images/polaroid-fleurs.png'), url('../images/fond-texture.png');
-    background-repeat: no-repeat, no-repeat;
-    background-position-y: -5%, 0%;
-    /*background-position-x: center, 0%;
-    -webkit-background-size: cover;*/
+    background-image: url('../images/fond-texture.png');
 }
 
 hr {
@@ -61,12 +57,7 @@ hr {
 }
 
 .rspvp, .gifts {
-    background-image: url('../images/fond-texture.png');
     margin-top:25%;
-}
-
-.info {
-    background-color: #ffff;
 }
 
 hr.light {
@@ -82,6 +73,7 @@ h1 {
 h2 {
     font-family: 'Intro shade', sans-serif;
     white-space: pre-line;
+    text-align: center;
     font-size: 44px;
 }
 
@@ -147,7 +139,6 @@ p {
     background-color: transparent;
 }
 
-/*navbar mobile stuff*/
 @media(min-width:768px) {
     .navbar-default {
         background-color: transparent;
@@ -203,34 +194,36 @@ header {
     width: 100%;
     min-height: 100%;
     text-align: center;
+    background-image: url('../images/polaroid-fleurs.png');
     background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-#main-header {
-    height: 1022px;
-}
 
 section {
     position: relative;
     top: 10%;
 }
 
-#welcome {
-    height: 990px;
+@media screen and (orientation:landscape) {
+    #main-header {
+        height: 1022px;
+    }
+
+    #welcome {
+        height: 990px;
+    }
+
+    #gifts {
+        height: 985px;
+    }
 }
 
 #rspvp {
     background: #ffff;
 }
 
-#gifts {
-    height: 985px;
-    background-image: url('../images/fond-texture.png');
-}
 
 header .header-content {
     position: relative;
@@ -330,19 +323,35 @@ body {
     webkit-tap-highlight-color: #222;
 }
 
-.map-container {
+.map-grid-container {
     display: grid;
     grid-template-columns: 50% 50%;
     text-align: center;
     justify-content: center;
 }
 
+.map-container {
+    padding-top: 25px;
+}
+
 .info-container {
     padding-right: 10%;
 }
 
-.info-container hr {
-    width: 595px;
+@media screen and (orientation:portrait) {
+    .map-grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-container {
+        padding-right: 0%;
+        padding-bottom: 25px;
+    }
+
+    section {
+        padding-bottom: 30px;
+    }
 }
 
 .form-control {

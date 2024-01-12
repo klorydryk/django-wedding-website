@@ -88,10 +88,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <hr class="hr-text rspvp"
-                    data-content="{% blocktrans %} Réservez
+                <h2 class="rspvp"> {% blocktrans %} Réservez
                     votre
-                    7 juin 2024 {% endblocktrans %}">
+                    7 juin 2024 {% endblocktrans %} </h2>
                 <div class="text-content">
                     {% blocktrans %} Nous sommes heureux de vous inviter à notre
                     mariage le vendredi 7 juin 2024 au château du Vivier,
@@ -106,16 +105,24 @@
 </section>
 
 <section id="rspvp">
-    <div class="map-container">
+    <div class="map-grid-container">
 
-        <div class="text-content">
+        <div class="map-container">
+            <style scoped>
+                .map {
+                    @media screen and (orientation:portrait) {
+                        aspect-ratio: 1 / 1;
+                        height: 100%;
+                    }
+                }
+            </style>
             <iframe width="70%"
                     height="700px"
                     frameborder="1"
                     allowfullscreen
                     allow="geolocation"
-                    src="//umap.openstreetmap.fr/fr/map/carte-sans-nom_999518?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true">
-
+                    src="//umap.openstreetmap.fr/fr/map/carte-sans-nom_999518?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true"
+                    class="map">
             </iframe>
             <p>
                 <a href="//umap.openstreetmap.fr/fr/map/carte-sans-nom_999518?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true">
@@ -125,21 +132,19 @@
         </div>
 
         <div class="info-container">
-            <hr class="hr-text info"
-                data-content="{% blocktrans %} Les
-                    informations
-                    pratiques {% endblocktrans %}">
+            <h2>
+                {% blocktrans %} Les
+                informations
+                pratiques {% endblocktrans %} </h2>
             <div class="text-content">
                 <span style="font-weight: bold;"> {% trans 'Vous êtes attendus à partir de 16h au château royal de Viver, Fontenay-Trésigny (77).' %} </span>
                 {% blocktrans %} Une cérémonie laïque ouvrira le bal pour sceller nos voeux avant un cocktail d'honneur. Pour célébrer avec nous ce moment de bonheur, venez habillés de vos plus beaux costumes en rouge ou or.
                 Afin de mieux gérer ce beau jour de fête, merci de répondre à l'invitation avant le ... {% endblocktrans %}
             </div>
 
-            <div class="text-content">
-                <button class="btn btn-lg text-uppercase btn-primary cta">
-                    {% trans 'Je dis oui'%}
-                </button>
-            </div>
+            <button class="btn btn-lg text-uppercase btn-primary cta">
+                {% trans 'Je dis oui'%}
+            </button>
         </div>
 
     </div>
@@ -150,23 +155,19 @@
         <div class="row">
             <div class="col-lg-9 col-lg-offset-2 text-center">
 
-                <hr class="hr-text gifts"
-                    data-content="{% blocktrans %} Liste
+                <h2 class="gifts"> {% blocktrans %} Liste
                         des
-                        cadeaux {% endblocktrans %}">
+                    cadeaux {% endblocktrans %} </h2>
 
                 <div class="text-content">
                     {% blocktrans %} Nous avons fait le choix de ne pas faire de liste de mariage car nous souhaitons partir en Chine pour notre Lune de Miel !
                     Une urne sera mise à disposition le jour J. Si vous ne pouvez pas être présent le jour de notre mariage mais que vous souhaitez tout de même nous offrir un quelque chose, merci de nous contacter. {% endblocktrans %}
                 </div>
 
-                <div class="text-content">
-                    <button class="btn btn-lg text-uppercase btn-primary ">
-                        Contact
-                    </button>
-                </div>
+                <button class="btn btn-lg text-uppercase btn-primary ">
+                    Contact
+                </button>
             </div>
-
         </div>
     </div>
 </section>
