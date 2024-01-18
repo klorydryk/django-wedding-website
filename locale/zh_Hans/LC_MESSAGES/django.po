@@ -50,7 +50,7 @@ msgstr ""
 msgid ""
 " Nous nous\n"
 "                marions ! "
-msgstr ""
+msgstr "我们結婚 !"
 
 #: bigday/templates/home.html:84
 msgid ""

@@ -17,6 +17,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+
             <a class="navbar-brand page-scroll" href="#page-top">
                 Save the date
             </a>
@@ -51,8 +52,8 @@
                     </a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#rspvp">
-                        RSPVP
+                    <a class="page-scroll" href="#rsvp">
+                        RSVP
                     </a>
                 </li>
                 <li>
@@ -69,42 +70,31 @@
 {% block main %}
 <header id="main-header">
     <div class="header-content">
-        <div class="header-content-inner">
-            <div class="header-date">07.06.24</div>
-            <h1>Save
-                the
-                date</h1>
-            <hr>
+        <div class="header-date">07.06.24</div>
+        <h1>Save
+            the
+            date</h1>
+        <div class="header-div">
+            {% blocktrans %} Nous nous
+            marions ! {% endblocktrans %}
+        </div>
+    </div>
+    <div class="subhead">
+        <h2> {% blocktrans %} Réservez
+                    votre
+                    7 juin 2024 {% endblocktrans %} </h2>
+        <div class="text-content">
+            {% blocktrans %} Nous sommes heureux de vous inviter à notre
+            mariage le vendredi 7 juin 2024 au château du Vivier,
+            à Fontenay-Trésigny (77).
 
-            <div class="header-div">
-                {% blocktrans %} Nous nous
-                marions ! {% endblocktrans %}
-            </div>
+            Une cérémonie laïque est prévue avant le cocktail d'ouverture des festivités.
+            Nous vous attendons nombreux ! {% endblocktrans %}
         </div>
     </div>
 </header>
 
-<section class="" id="welcome">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="rspvp"> {% blocktrans %} Réservez
-                    votre
-                    7 juin 2024 {% endblocktrans %} </h2>
-                <div class="text-content">
-                    {% blocktrans %} Nous sommes heureux de vous inviter à notre
-                    mariage le vendredi 7 juin 2024 au château du Vivier,
-                    à Fontenay-Trésigny (77).
-
-                    Une cérémonie laïque est prévue avant le cocktail d'ouverture des festivités.
-                    Nous vous attendons nombreux ! {% endblocktrans %}
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="rspvp">
+<section id="rsvp">
     <div class="map-grid-container">
 
         <div class="map-container">
@@ -146,7 +136,63 @@
                 {% trans 'Je dis oui'%}
             </button>
         </div>
+    </div>
+</section>
 
+<section id="hotels">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-lg-offset-2 text-center">
+
+                <div class="text-content">
+                    {% blocktrans %} Voici la liste des hôtels aux alentour du domaine:
+                    <span style="font-weight: bold;"> HOTEL KYRIAD </span>
+                    114 rue Bertaux
+                    77610 Fontenay Trésigny
+                    01 64 42 64 80
+                    {% endblocktrans %}
+
+                    <span style="font-weight: bold;"> LE PORTAIL BLEU</span>
+                    2 route de Fontenay
+                    77610 Châtres
+                    01 64 25 84 94
+
+                    <span style="font-weight: bold;"> HOTEL 1ERE CLASSE</span>
+                    114 rue Bertaux
+                    77610 Fontenay Trésigny
+                    01 64 42 61 82 {% blocktrans %}(avant 11h ou après 17h){% endblocktrans %}
+                    fontenaytresigny@premiereclasse.fr
+
+                    <span style="font-weight: bold;"> FRANÇOISE ET MICHEL RIEUL</span>
+                    22 rue Gallier
+                    77390 Chaumes
+                    06 72 84 75 46
+                    mhriel@gmail.com
+                    chambres d'hôtes capacité 10 pers
+
+                    <span style="font-weight: bold;">LE RELAIS</span>
+                    53 rue Bertaux
+                    77610 Fontenay Trésigny
+                    01 64 42 64 60
+
+                    <span style="font-weight: bold;">LYDIE LANDART</span>
+                    18 rue Jules Raimu
+                    77173 Chevry Cossigny
+                    06 69 49 97 80
+                    Chambres d'hôte
+                    9 couchages
+
+
+                    <span style="font-weight: bold;">MANOIR DE BEAUMARCHAIS</span>
+                    77610 Les Chapelles Bourbon
+                    01 64 07 11 08 + d'infos
+
+                </div>
+
+
+
+            </div>
+        </div>
     </div>
 </section>
 
