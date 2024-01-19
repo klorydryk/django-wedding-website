@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-04 15:39+0100\n"
+"POT-Creation-Date: 2024-01-19 02:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,95 +27,142 @@ msgid "French"
 msgstr ""
 
 #: bigday/settings.py:127
-msgid "Chinese"
+msgid "Simplified Chinese"
 msgstr ""
 
-#: bigday/templates/home.html:29
+#: bigday/settings.py:128
+msgid "Traditional Chinese"
+msgstr ""
+
+#: bigday/templates/home.html:45
 msgid "Accueil"
 msgstr "Home"
 
-#: bigday/templates/home.html:34
+#: bigday/templates/home.html:50
 msgid "Le mariage"
 msgstr "The wedding"
 
-#: bigday/templates/home.html:44
+#: bigday/templates/home.html:60
 msgid "Liste des cadeaux"
 msgstr "Presents list"
 
-#: bigday/templates/home.html:64
+#: bigday/templates/home.html:77
 msgid ""
 " Nous nous\n"
-"                marions ! "
-msgstr "We are\n getting married!"
+"            marions ! "
+msgstr ""
+"We are\n"
+" getting married!"
 
-#: bigday/templates/home.html:76
+#: bigday/templates/home.html:82
 msgid ""
 " Réservez\n"
 "                    votre\n"
 "                    7 juin 2024 "
-msgstr "Save\n your\n 7th June, 2024"
+msgstr ""
+"Save\n"
+" your\n"
+" 7th June, 2024"
 
-#: bigday/templates/home.html:80
+#: bigday/templates/home.html:86
 msgid ""
 " Nous sommes heureux de vous inviter à notre\n"
-"                    mariage le vendredi 7 juin 2024 au château du Vivier,\n"
-"                    à Fontenay-Trésigny (77).\n"
+"            mariage le vendredi 7 juin 2024 au château du Vivier,\n"
+"            à Fontenay-Trésigny (77).\n"
 "\n"
-"                    Une cérémonie laïque est prévue avant le cocktail "
-"d'ouverture des festivités.\n"
-"                    Nous vous attendons nombreux ! "
+"            Une cérémonie laïque est prévue avant le cocktail d'ouverture "
+"des festivités.\n"
+"            Nous vous attendons nombreux ! "
 msgstr "We are happy to invite you to our wedding \nthe Friday 7th of June, 2024 "
 "at the Château du Viver, at Fontenay-Trésigny (77).\n"
 "\n"
 "A secular ceremony is expected before the opening cocktail. \n We look forward to see you!"
 
-#: bigday/templates/home.html:106
+#: bigday/templates/home.html:117
 msgid "Voir en plein écran"
 msgstr "Open in fullscreen"
 
-#: bigday/templates/home.html:113
+#: bigday/templates/home.html:124
 msgid ""
 " Les\n"
-"                    informations\n"
-"                    pratiques "
-msgstr "About\n the\n wedding"
+"                informations\n"
+"                pratiques "
+msgstr ""
+"About\n"
+" the\n"
+" wedding"
 
-#: bigday/templates/home.html:117
+#: bigday/templates/home.html:128
 msgid ""
 "Vous êtes attendus à partir de 16h au château royal de Viver, Fontenay-"
 "Trésigny (77)."
-msgstr "You are expected at 4pm at the Château royal de Viver, Fontenay-Trésigny (77)."
+msgstr ""
+"You are expected at 4pm at the Château royal de Viver, Fontenay-Trésigny "
+"(77)."
 
-#: bigday/templates/home.html:118
+#: bigday/templates/home.html:129
 msgid ""
 " Une cérémonie laïque ouvrira le bal pour sceller nos voeux avant un "
 "cocktail d'honneur. Pour célébrer avec nous ce moment de bonheur, venez "
 "habillés de vos plus beaux costumes en rouge ou or.\n"
 "                Afin de mieux gérer ce beau jour de fête, merci de répondre "
 "à l'invitation avant le ... "
-msgstr "A secular ceremony will open the ball to seal our vows before a cocktail reception. To celebrate this moment of happiness with us, please come dress with your best suit in red or gold.\n"
-"To ensure the best management of this day, please reply to the invite before the ..."
+msgstr ""
+"A secular ceremony will open the ball to seal our vows before a cocktail "
+"reception. To celebrate this moment of happiness with us, please come dress "
+"with your best suit in red or gold.\n"
+"To ensure the best management of this day, please reply to the invite before "
+"the ..."
 
-#: bigday/templates/home.html:124
+#: bigday/templates/home.html:134
 msgid "Je dis oui"
-msgstr "Yes, please"
+msgstr "yes please"
 
-#: bigday/templates/home.html:138
+#: bigday/templates/home.html:145
+msgid " Voici la liste des hôtels aux alentour du domaine: "
+msgstr "Here's the available hotels arround the domain:"
+
+#: bigday/templates/home.html:153 bigday/templates/home.html:160
+#: bigday/templates/home.html:184 bigday/templates/home.html:200
+msgid "plus d'infos"
+msgstr "more info"
+
+#: bigday/templates/home.html:166
+msgid "(avant 11h ou après 17h)"
+msgstr "(before 11 am or after 5 pm)"
+
+#: bigday/templates/home.html:183
+msgid "Chambres d'hôtes capacité 10 pers"
+msgstr "Guest room (10 p. max)"
+
+#: bigday/templates/home.html:192
+msgid ""
+"Chambres d'hôte\n"
+"                        9 couchages"
+msgstr "Guests room\n 9 beds"
+
+#: bigday/templates/home.html:212
 msgid ""
 " Liste\n"
 "                        des\n"
-"                        cadeaux "
-msgstr "List\n of\n presents"
+"                    cadeaux "
+msgstr ""
+"List\n"
+" of\n"
+" presents"
 
-#: bigday/templates/home.html:143
+#: bigday/templates/home.html:217
 msgid ""
 " Nous avons fait le choix de ne pas faire de liste de mariage car nous "
 "souhaitons partir en Chine pour notre Lune de Miel !\n"
 "                    Une urne sera mise à disposition le jour J. Si vous ne "
 "pouvez pas être présent le jour de notre mariage mais que vous souhaitez "
 "tout de même nous offrir un quelque chose, merci de nous contacter. "
-msgstr "We have decided to not make a presents list since we want to go to China for our honey moon!\n"
-"A ballot box will be disposed the d-day. If you can not attend to our wedding but still want to contribute to it, please contact us."
+msgstr ""
+"We have decided to not make a presents list since we want to go to China for "
+"our honey moon!\n"
+"A ballot box will be disposed the d-day. If you can not attend to our "
+"wedding but still want to contribute to it, please contact us."
 
 #: venv/lib/python3.9/site-packages/django/contrib/messages/apps.py:15
 msgid "Messages"
@@ -1319,3 +1366,6 @@ msgstr ""
 #: venv/lib/python3.9/site-packages/django/views/templates/default_urlconf.html:249
 msgid "Connect, get help, or contribute"
 msgstr ""
+
+#~ msgid "Chambres d'hôte"
+#~ msgstr "Guest room"

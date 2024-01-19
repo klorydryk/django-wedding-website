@@ -9,7 +9,7 @@
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
+        <div class="navbar-header col-lg-3">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
@@ -21,7 +21,6 @@
             <a class="navbar-brand page-scroll" href="#page-top">
                 Save the date
             </a>
-
 
             <form id="form-lang" action="{% url 'set_language' %}" method="post">
                 {% csrf_token %}
@@ -47,7 +46,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#welcome">
+                    <a class="page-scroll" href="#wedding">
                         {% trans 'Le mariage' %}
                     </a>
                 </li>
@@ -79,11 +78,11 @@
             marions ! {% endblocktrans %}
         </div>
     </div>
-    <div class="subhead">
+    <div class="subhead" id="wedding">
         <h2> {% blocktrans %} Réservez
                     votre
                     7 juin 2024 {% endblocktrans %} </h2>
-        <div class="text-content">
+        <div class="col-md-6 col-md-offset-3 text-center text-content">
             {% blocktrans %} Nous sommes heureux de vous inviter à notre
             mariage le vendredi 7 juin 2024 au château du Vivier,
             à Fontenay-Trésigny (77).
@@ -100,14 +99,13 @@
         <div class="map-container">
             <style scoped>
                 .map {
+                    aspect-ratio: 1 / 1;
                     @media screen and (orientation:portrait) {
-                        aspect-ratio: 1 / 1;
                         height: 100%;
                     }
                 }
             </style>
             <iframe width="70%"
-                    height="700px"
                     frameborder="1"
                     allowfullscreen
                     allow="geolocation"
@@ -143,54 +141,64 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-9 col-lg-offset-2 text-center">
-
                 <div class="text-content">
-                    {% blocktrans %} Voici la liste des hôtels aux alentour du domaine:
-                    <span style="font-weight: bold;"> HOTEL KYRIAD </span>
-                    114 rue Bertaux
-                    77610 Fontenay Trésigny
-                    01 64 42 64 80
-                    {% endblocktrans %}
-
-                    <span style="font-weight: bold;"> LE PORTAIL BLEU</span>
+                    {% blocktrans %} Voici la liste des hôtels aux alentour du domaine: {% endblocktrans %}
+                </div>
+                <div class="text-content hotels">
+                    <div class="hotel">
+                        <span style="font-weight: bold;">HOTEL KYRIAD</span>
+                        114 rue Bertaux
+                        77610 Fontenay Trésigny
+                        01 64 42 64 80
+                        <a href="https://www.kyriad.com/fr/hotels/kyriad-fontenay-tresigny">{% blocktrans %}plus d'infos{% endblocktrans %}</a>
+                    </div>
+                    <div class="hotel">
+                        <span style="font-weight: bold;">LE PORTAIL BLEU</span>
                     2 route de Fontenay
                     77610 Châtres
                     01 64 25 84 94
+                    <a href="http://www.leportailbleu.com/">{% blocktrans %}plus d'infos{% endblocktrans %}</a>
+                    </div>
+                    <div class="hotel">
+                        <span style="font-weight: bold;">HOTEL 1ERE CLASSE</span>
+                        114 rue Bertaux
+                        77610 Fontenay Trésigny
+                        01 64 42 61 82 {% blocktrans %}(avant 11h ou après 17h){% endblocktrans %}
+                        fontenaytresigny@premiereclasse.fr
+                    </div>
 
-                    <span style="font-weight: bold;"> HOTEL 1ERE CLASSE</span>
-                    114 rue Bertaux
-                    77610 Fontenay Trésigny
-                    01 64 42 61 82 {% blocktrans %}(avant 11h ou après 17h){% endblocktrans %}
-                    fontenaytresigny@premiereclasse.fr
+                    <div class="hotel">
+                        <span style="font-weight: bold;">LE RELAIS</span>
+                        53 rue Bertaux
+                        77610 Fontenay Trésigny
+                        01 64 42 64 60
+                    </div>
 
-                    <span style="font-weight: bold;"> FRANÇOISE ET MICHEL RIEUL</span>
-                    22 rue Gallier
-                    77390 Chaumes
-                    06 72 84 75 46
-                    mhriel@gmail.com
-                    chambres d'hôtes capacité 10 pers
+                    <div class="hotel">
+                        <span style="font-weight: bold;"> FRANÇOISE ET MICHEL RIEUL</span>
+                        22 rue Gallier
+                        77390 Chaumes
+                        06 72 84 75 46
+                        mhriel@gmail.com
+                        {% blocktrans %}Chambres d'hôtes capacité 10 pers{% endblocktrans %}
+                        <a href="https://chezfrancoiseetmichel.wordpress.com/">{% blocktrans %}plus d'infos{% endblocktrans %}</a>
+                    </div>
 
-                    <span style="font-weight: bold;">LE RELAIS</span>
-                    53 rue Bertaux
-                    77610 Fontenay Trésigny
-                    01 64 42 64 60
-
-                    <span style="font-weight: bold;">LYDIE LANDART</span>
-                    18 rue Jules Raimu
-                    77173 Chevry Cossigny
-                    06 69 49 97 80
-                    Chambres d'hôte
-                    9 couchages
-
-
+                    <div class="hotel">
+                        <span style="font-weight: bold;">LYDIE LANDART</span>
+                        18 rue Jules Raimu
+                        77173 Chevry Cossigny
+                        06 69 49 97 80
+                        {% blocktrans %}Chambres d'hôte
+                        9 couchages{% endblocktrans %}
+                    </div>
+                </div>
+                <div class="hotel">
                     <span style="font-weight: bold;">MANOIR DE BEAUMARCHAIS</span>
                     77610 Les Chapelles Bourbon
-                    01 64 07 11 08 + d'infos
-
+                    01 64 07 11 08
+                    <a href="https://www.beaumarchais.eu/">{% blocktrans %}plus d'infos{% endblocktrans %}</a>
                 </div>
-
-
-
             </div>
         </div>
     </div>

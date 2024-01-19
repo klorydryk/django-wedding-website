@@ -39,6 +39,7 @@ h2 {
     font-family: 'Intro shade', sans-serif;
     white-space: pre-line;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 p {
@@ -46,10 +47,31 @@ p {
 }
 
 .text-content {
+    text-align: center;
+    letter-spacing: 0.7px;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.hotel {
+    text-align: center;
     letter-spacing: 0.7px;
     font-size: 18px;
     white-space: pre-line;
     line-height: 1.3;
+}
+
+@media screen and (orientation: landscape) {
+    .hotels {
+        display: grid;
+        grid: auto-flow/ 1fr 1fr;
+        gap: 20px;
+        justify-content: space-evenly;
+    }
+}
+
+section {
+    margin-bottom: 50px;
 }
 
 .navbar-default {
@@ -75,7 +97,8 @@ p {
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #e42626;
+    color: #808080;!important;
+    background-color: #e7e7e7;
 }
 
 .navbar-default .nav > li.active>a,
@@ -86,12 +109,13 @@ p {
 
 .navbar-default .nav > li.active>a:hover,
 .navbar-default .nav>li.active>a:focus:hover {
-    background-color: #f5f1e2;
+    color: #e42626;
+    background-color: #e7e7e7;
 }
 
 @media(min-width:768px) {
     .navbar-default {
-        background-color: #f5f1e2;
+        background-color: transparent;
     }
 
     .navbar-default .navbar-header .navbar-brand {
@@ -122,6 +146,7 @@ p {
     .navbar-default.affix {
         border-color: rgba(0, 0, 0,0);
         background-color: #f5f1e2;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     }
 
     .navbar-default.affix .navbar-header .navbar-brand {
@@ -142,18 +167,18 @@ p {
 header {
     position: relative;
     width: 100%;
+    min-height: 1313px;
     text-align: center;
     background-image: url('../images/polaroid-fleurs.png'), url('../images/fond-texture.png');
     background-position: center, center;
     background-repeat: no-repeat, no-repeat;
-    background-size: 1312px auto, cover;
+    background-size: 1313px auto, cover;
 }
 
 header .header-content {
     position: relative;
     width: 100%;
-    padding-top: 25vh;
-    padding-bottom: 40vh;
+    top: 25vh;
     text-align: center;
 }
 
@@ -161,19 +186,27 @@ header .header-content {
     header {
         background-position: 44% 30%;
         background-size: 60vh, cover;
-        padding-bottom: 20vh;
+    }
+
+    .text-content {
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
 
 .subhead {
-    /*padding-top: 20px;*/
-    padding-bottom: 100px;
+    position: relative;
+    top: 70vh;
 }
 
 .btn {
     border: 0;
-    border-radius: 34px;
-    margin-top:5%;
+    margin-top: 35px;
+}
+
+.form-control {
+    margin: 7px;
+    width: auto;
 }
 
 .btn-primary {
@@ -182,7 +215,7 @@ header .header-content {
     color: #ffffff;
     background-color: #e42626;
     border-radius: 34px;
-    font-size: 31px;
+    font-size: 15pt;
     letter-spacing: 1px;
     text-align: center;
 }
