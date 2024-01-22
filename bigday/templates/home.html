@@ -105,7 +105,7 @@
     </div>
 </header>
 
-<section id="rsvp">
+<section id="infospratiques">
     <div class="map-grid-container">
 
         <div class="map-container">
@@ -132,55 +132,53 @@
         </div>
 
         <div class="info-container">
-            <h2>
-                {% blocktrans %} Les
-                informations
-                pratiques {% endblocktrans %} </h2>
+            <h2> {% blocktrans %} Les informations pratiques {% endblocktrans %} </h2>
             <div class="text-content">
-                {% blocktrans %} <h2>Les informations pratiques</h2>
-Nous sommes ravis de partager avec vous les détails de notre journée spéciale! 
-Vous êtes attendus à partir de 16h au château royal de Viver, Fontenay-Trésigny (77) pour une soirée festive et remplie de joie. 
-Voici quelques détails à ce sujet : 
-
-Cérémonie laïque : 
-   - Heure : 17h
-   - Lieu : Château de Vivier
-   - Durée : 1h
-
-Cocktail d'Ouverture :
-
-   - Heure : 18h
-   - Lieu : Château de Vivier 
-   - Durée : Le cocktail d'ouverture durera 2 heures, rempli de délicieuses boissons, d'amuse-bouches exquis, et d'une ambiance festive.
-
-Dress Code :
-
-  Le thème de notre mariage sera "rouge et or". Venez donc parés de plus beaux ornements :) !
-
-Pas d'Entrées au Dîner :
-
-    Veuillez noter que notre dîner ne comportera pas d'entrées formelles. Nous souhaitons que le cocktail soit une expérience gourmande complète avant de savourer un délicieux repas plus tard dans la soirée.
-
-Partageons des Moments Mémorables :
-
-    Nous sommes impatients de créer des souvenirs inoubliables avec vous lors de ce cocktail. Profitez-en pour vous détendre, faire connaissance avec d'autres invités et simplement vous imprégner de l'amour qui nous entoure.
-
-Nous sommes honorés de partager ce moment avec vous et avons hâte de célébrer ensemble. Merci de faire partie de notre histoire d'amour!
-
-Avec amour,
-
-Angel et Benoît 
-
-<h2>RSVP</h2>
-                Afin de gérer au mieux ce jour de fête, merci de <a href="https://framaforms.org/rsvp-de-notre-mariage-angel-benoit-1705788344">répondre à l'invitation</a> avant le 28 février 2024.{% endblocktrans %}
+                {% blocktrans %} 
+                <p>Nous sommes ravis de partager avec vous les détails de notre journée spéciale!</p>
+                <p>Vous êtes attendus à partir de 16h au château royal de Viver, Fontenay-Trésigny (77) pour une soirée festive et remplie de joie.<p> 
+                <p>Voici quelques détails à ce sujet :</p>
+                
+                <p><strong>Cérémonie laïque :</strong></p>
+                <ul>
+                  <li><strong>Heure :</strong> 17h</li>
+                  <li><strong>Lieu :</strong> Château de Vivier</li>
+                  <li><strong>Durée :</strong> 1h</li>
+                </ul>
+                
+                <p><strong>Cocktail d'Ouverture :</strong></p>
+                <ul>
+                  <li><strong>Heure :</strong> 18h</li>
+                  <li><strong>Lieu :</strong> Château de Vivier</li>
+                  <li><strong>Durée :</strong> Le cocktail d'ouverture durera 2 heures, rempli de délicieuses boissons, d'amuse-bouches exquis, et d'une ambiance festive.</li>
+                </ul>
+                
+                <p><strong>Dress Code :</strong></p>
+                <p>Le thème de notre mariage sera "rouge et or". Venez donc parés de plus beaux ornements :) !</p>
+                
+                <p><strong>Pas d'Entrées au Dîner :</strong></p>
+                <p>Veuillez noter que notre dîner ne comportera pas d'entrées formelles. Nous souhaitons que le cocktail soit une expérience gourmande complète avant de savourer un délicieux repas plus tard dans la soirée.</p>
+                
+                <p><strong>Partageons des Moments Mémorables :</strong></p>
+                <p>Nous sommes impatients de créer des souvenirs inoubliables avec vous lors de ce cocktail. Profitez-en pour vous détendre, faire connaissance avec d'autres invités et simplement vous imprégner de l'amour qui nous entoure.</p>
+                
+                <p>Nous sommes honorés de partager ce moment avec vous et avons hâte de célébrer ensemble. Merci de faire partie de notre histoire d'amour!</p>
+                
+                <p><strong>Avec amour,</strong><br>Angel et Benoît</p>
             </div>
-
-            <a href="https://framaforms.org/rsvp-de-notre-mariage-angel-benoit-1705788344">
-                <button class="btn btn-lg text-uppercase btn-primary cta">
-                    {% trans 'Je dis oui'%}
-                </button>
-            </a>
         </div>
+    </div>
+</section>
+<section id="rsvp">
+    <div>
+        <h2>RSVP</h2>
+        <p>Afin de gérer au mieux ce jour de fête, merci de <a href="https://framaforms.org/rsvp-de-notre-mariage-angel-benoit-1705788344">répondre à l'invitation</a> avant le 28 février 2024.</p>{% endblocktrans %}
+    </div>
+        <a href="https://framaforms.org/rsvp-de-notre-mariage-angel-benoit-1705788344">
+            <button class="btn btn-lg text-uppercase btn-primary cta">
+                {% trans 'Je dis oui'%}
+            </button>
+        </a>
     </div>
 </section>
 
@@ -189,6 +187,7 @@ Angel et Benoît
         <div class="row">
             <div class="col-lg-9 col-lg-offset-2 text-center">
                 <div class="text-content">
+                    <h2> {% trans 'Hébergements'%} </h2>
                     {% blocktrans %} Voici la liste des hôtels aux alentour du domaine: {% endblocktrans %}
                 </div>
                 <div class="text-content hotels">
