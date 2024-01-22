@@ -52,7 +52,7 @@
                 </li>
                 <li>
                     <a class="page-scroll" href="#infospratiques">
-                        {% trans 'infos pratiques' %}
+                        {% trans 'Infos pratiques' %}
                     </a>
                 </li>
                 <li>
@@ -102,10 +102,10 @@
         <div class="col-md-6 col-md-offset-3 text-center text-content">
             {% blocktrans %} Nous sommes heureux de vous inviter à notre
             mariage le vendredi 7 juin 2024 au château du Vivier,
-            à Fontenay-Trésigny (77).
+            à Fontenay-Trésigny (77). {% endblocktrans %}
 
-            Une cérémonie laïque démarrera les festivités.
-            Nous vous attendons nombreux ! {% endblocktrans %}
+            <p>{% blocktrans %} Une cérémonie laïque démarrera les festivités.
+            Nous vous attendons nombreux ! {% endblocktrans %}</p>
         </div>
     </div>
 </header>
@@ -117,31 +117,42 @@
             <style scoped>
                 .map {
                     aspect-ratio: 1 / 1;
-                    @media screen and (orientation:portrait) {
+                }
+                @media screen and (orientation:portrait) {
+                    .map {
                         height: 100%;
+                    }
+                    a {
+                        position: relative;
+                        z-index: 9;
                     }
                 }
             </style>
-            <iframe width="70%"
+            <iframe width="80%"
                     frameborder="1"
                     allowfullscreen
                     allow="geolocation"
                     src="//umap.openstreetmap.fr/fr/map/carte-sans-nom_999518?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true"
                     class="map">
             </iframe>
-            <p>
+
+            <div>
                 <a href="//umap.openstreetmap.fr/fr/map/carte-sans-nom_999518?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true">
                     {% trans 'Voir en plein écran' %}
                 </a>
-            </p>
+            </div>
+
+
+
+
         </div>
 
         <div class="info-container">
             <h2> {% blocktrans %} Les informations pratiques {% endblocktrans %} </h2>
-            <div class="text-content">
-                {% blocktrans %} 
+
+                {% blocktrans %}
                 <p>Nous sommes ravis de partager avec vous les détails de notre journée spéciale!</p>
-                <p>Vous êtes attendus à partir de 16h au château royal de Viver, Fontenay-Trésigny (77) pour une soirée festive et remplie de joie.<p> 
+                <p>Vous êtes attendus à partir de 16h au château royal de Viver, Fontenay-Trésigny (77) pour une soirée festive et remplie de joie.<p>
                 <p>Voici quelques détails à ce sujet :</p>
                 
                 <p><strong>Cérémonie laïque :</strong></p>
@@ -168,21 +179,26 @@
                 <p>Nous sommes impatients de créer des souvenirs inoubliables avec vous, et nous avons hâte de célébrer notre union en votre compagnie. Merci de faire partie de ce moment !</p>
                 
                 <p><strong>Avec amour,</strong><br>Angel et Benoît</p>
-            </div>
         </div>
     </div>
 </section>
+
 <section id="rsvp">
-    <div>
-        <h2>RSVP</h2>
-        <p>Afin de gérer au mieux ce jour de fête, merci de <a href="https://framaforms.org/rsvp-de-notre-mariage-angel-benoit-1705788344">répondre à l'invitation</a> avant le 28 février 2024.</p>{% endblocktrans %}
+    <div class="container">
+        <div class="row">
+           <div class="col-lg-9 col-lg-offset-2 text-center">
+                <h2>RSVP</h2>
+                <p class="text-content">Afin de gérer au mieux ce jour de fête, merci de <a href="https://framaforms.org/rsvp-de-notre-mariage-angel-benoit-1705788344">répondre à l'invitation</a> avant le 28 février 2024.</p>{% endblocktrans %}
+
+                <a href="https://framaforms.org/rsvp-de-notre-mariage-angel-benoit-1705788344">
+                    <button class="btn btn-lg text-uppercase btn-primary cta">
+                        {% trans 'Je dis oui'%}
+                    </button>
+                </a>
+            </div>
+        </div>
     </div>
-        <a href="https://framaforms.org/rsvp-de-notre-mariage-angel-benoit-1705788344">
-            <button class="btn btn-lg text-uppercase btn-primary cta">
-                {% trans 'Je dis oui'%}
-            </button>
-        </a>
-    </div>
+
 </section>
 
 <section id="hotels">
@@ -264,7 +280,7 @@
 
                 <div class="text-content">
                     {% blocktrans %} Nous avons fait le choix de ne pas faire de liste de mariage car nous souhaitons partir en Chine pour notre Lune de Miel !
-                    Une urne sera mise à disposition le jour J. Si vous ne pouvez pas être présent le jour de notre mariage mais que vous souhaitez tout de même nous offrir un quelque chose, merci de nous contacter. {% endblocktrans %}
+                    <p>Une urne sera mise à disposition le jour J. Si vous ne pouvez pas être présent le jour de notre mariage mais que vous souhaitez tout de même nous offrir un quelque chose, merci de nous contacter. {% endblocktrans %} </p>
                 </div>
 
                 <a href="mailto:angel-benoit@quaidu13.fr?subject=Question pour le mariage du 7 juin" >

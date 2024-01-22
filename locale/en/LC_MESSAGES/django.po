@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-19 02:58+0100\n"
+"POT-Creation-Date: 2024-01-22 22:38+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,11 +42,19 @@ msgstr "Home"
 msgid "Le mariage"
 msgstr "The wedding"
 
-#: bigday/templates/home.html:60
+#: bigday/templates/home.html:55
+msgid "Infos pratiques"
+msgstr "About the wedding"
+
+#: bigday/templates/home.html:65
+msgid "Hébergement"
+msgstr "Accomodation"
+
+#: bigday/templates/home.html:70
 msgid "Liste des cadeaux"
 msgstr "Presents list"
 
-#: bigday/templates/home.html:77
+#: bigday/templates/home.html:87
 msgid ""
 " Nous nous\n"
 "            marions ! "
@@ -54,7 +62,7 @@ msgstr ""
 "We are\n"
 " getting married!"
 
-#: bigday/templates/home.html:82
+#: bigday/templates/home.html:99
 msgid ""
 " Réservez\n"
 "                    votre\n"
@@ -64,84 +72,164 @@ msgstr ""
 " your\n"
 " 7th June, 2024"
 
-#: bigday/templates/home.html:86
+#: bigday/templates/home.html:103
 msgid ""
 " Nous sommes heureux de vous inviter à notre\n"
 "            mariage le vendredi 7 juin 2024 au château du Vivier,\n"
-"            à Fontenay-Trésigny (77).\n"
-"\n"
-"            Une cérémonie laïque est prévue avant le cocktail d'ouverture "
-"des festivités.\n"
-"            Nous vous attendons nombreux ! "
-msgstr "We are happy to invite you to our wedding \nthe Friday 7th of June, 2024 "
-"at the Château du Viver, at Fontenay-Trésigny (77).\n"
-"\n"
-"A secular ceremony is expected before the opening cocktail. \n We look forward to see you!"
+"            à Fontenay-Trésigny (77). "
+msgstr ""
+"We are happy to invite you to our wedding \n"
+"the Friday 7th of June, 2024 at the Château du Viver, at Fontenay-Trésigny (77). "
 
-#: bigday/templates/home.html:117
+#: bigday/templates/home.html:107
+msgid ""
+" Une cérémonie laïque démarrera les festivités.\n"
+"            Nous vous attendons nombreux ! "
+msgstr "A secular ceremony will start the party. \n"
+" We look forward to see you!"
+
+#: bigday/templates/home.html:134
 msgid "Voir en plein écran"
 msgstr "Open in fullscreen"
 
-#: bigday/templates/home.html:124
-msgid ""
-" Les\n"
-"                informations\n"
-"                pratiques "
-msgstr ""
-"About\n"
-" the\n"
-" wedding"
+#: bigday/templates/home.html:140
+msgid " Les informations pratiques "
+msgstr " About the wedding "
 
-#: bigday/templates/home.html:128
+#: bigday/templates/home.html:142
 msgid ""
-"Vous êtes attendus à partir de 16h au château royal de Viver, Fontenay-"
-"Trésigny (77)."
+"\n"
+"                <p>Nous sommes ravis de partager avec vous les détails de "
+"notre journée spéciale!</p>\n"
+"                <p>Vous êtes attendus à partir de 16h au château royal de "
+"Viver, Fontenay-Trésigny (77) pour une soirée festive et remplie de joie."
+"<p>\n"
+"                <p>Voici quelques détails à ce sujet :</p>\n"
+"                \n"
+"                <p><strong>Cérémonie laïque :</strong></p>\n"
+"                <ul>\n"
+"                  <li><strong>Heure :</strong> 17h</li>\n"
+"                  <li><strong>Lieu :</strong> Château de Vivier</li>\n"
+"                  <li><strong>Durée :</strong> 1h</li>\n"
+"                </ul>\n"
+"                \n"
+"                <p><strong>Cocktail d'Ouverture :</strong></p>\n"
+"                <ul>\n"
+"                  <li><strong>Heure :</strong> 18h</li>\n"
+"                  <li><strong>Lieu :</strong> Château de Vivier</li>\n"
+"                  <li><strong>Durée :</strong> Le cocktail d'ouverture "
+"durera 2 heures, rempli de délicieuses boissons, d'amuse-bouches exquis, et "
+"d'une ambiance festive.</li>\n"
+"                </ul>\n"
+"                \n"
+"                <p><strong>Dress Code :</strong></p>\n"
+"                <p>Le thème de notre mariage sera \"rouge et or\". Venez "
+"donc parés de plus beaux ornements :) !</p>\n"
+"                \n"
+"                <p><strong>Pas d'Entrées au Dîner :</strong></p>\n"
+"                <p>Veuillez noter que notre dîner ne comportera pas "
+"d'entrées formelles. Nous souhaitons que le cocktail soit une expérience "
+"gourmande complète avant de savourer un délicieux repas plus tard dans la "
+"soirée.</p>\n"
+"                \n"
+"                <p><strong>Partageons des Moments Mémorables :</strong></p>\n"
+"                <p>Nous sommes impatients de créer des souvenirs "
+"inoubliables avec vous, et nous avons hâte de célébrer notre union en votre "
+"compagnie. Merci de faire partie de ce moment !</p>\n"
+"                \n"
+"                <p><strong>Avec amour,</strong><br>Angel et Benoît</p>\n"
+"        </div>\n"
+"    </div>\n"
+"</section>\n"
+"\n"
+"<section id=\"rsvp\">\n"
+"    <div class=\"container\">\n"
+"        <div class=\"row\">\n"
+"           <div class=\"col-lg-9 col-lg-offset-2 text-center\">\n"
+"                <h2>RSVP</h2>\n"
+"                <p class=\"text-content\">Afin de gérer au mieux ce jour de "
+"fête, merci de <a href=\"https://framaforms.org/rsvp-de-notre-mariage-angel-"
+"benoit-1705788344\">répondre à l'invitation</a> avant le 28 février 2024.</p>"
 msgstr ""
-"You are expected at 4pm at the Château royal de Viver, Fontenay-Trésigny "
-"(77)."
+"\n"
+"                <p>We are happy to share with you the detail of our special day!</p>\n"
+"                <p>Vous êtes attendus à partir de 16h au château royal de "
+"Viver, Fontenay-Trésigny (77) pour une soirée festive et remplie de joie."
+"<p>\n"
+"                <p>Voici quelques détails à ce sujet :</p>\n"
+"                \n"
+"                <p><strong>Secular ceremony :</strong></p>\n"
+"                <ul>\n"
+"                  <li><strong>Time :</strong> 17h</li>\n"
+"                  <li><strong>Location :</strong> Château de Vivier</li>\n"
+"                  <li><strong>Length :</strong> 1h</li>\n"
+"                </ul>\n"
+"                \n"
+"                <p><strong>Cocktail party :</strong></p>\n"
+"                <ul>\n"
+"                  <li><strong>Time :</strong> 18h</li>\n"
+"                  <li><strong>Location :</strong> Château de Vivier</li>\n"
+"                  <li><strong>Length :</strong> The cocktail will "
+"last for two hours, full of scrumptious brevage, tasteful hors d'oeuvre and a festive mood.</li>\n"
+"                </ul>\n"
+"                \n"
+"                <p><strong>Dress Code :</strong></p>\n"
+"                <p>The theme will be \"gilded and crimson\". Venez "
+"donc parés de plus beaux ornements :) !</p>\n"
+"                \n"
+"                <p><strong>No starter for dinner :</strong></p>\n"
+"                <p>Please do note our dinner will not include starters. We want to ensure that the cocktail will be a complete gourmet experience before savouring a delicious meal later.</p>\n"
+"                \n"
+"                <p><strong>Let's share unforgettable moments :</strong></p>\n"
+"                <p>We are excited to create unforgettable memories with you and we can't wait to celebrate our union along with you. Thank you to take part of this moment!</p>\n"
+"                \n"
+"                <p><strong>With love,</strong><br>Angel & Benoît</p>\n"
+"        </div>\n"
+"    </div>\n"
+"</section>\n"
+"\n"
+"<section id=\"rsvp\">\n"
+"    <div class=\"container\">\n"
+"        <div class=\"row\">\n"
+"           <div class=\"col-lg-9 col-lg-offset-2 text-center\">\n"
+"                <h2>RSVP</h2>\n"
+"                <p class=\"text-content\">To ensure a better management of this day, please <a href=\"https://framaforms.org/rsvp-de-notre-mariage-angel-benoit-1705788344\">accept the invite</a>"
+"                   before the 28th February, 2024.</p>"
 
-#: bigday/templates/home.html:129
-msgid ""
-" Une cérémonie laïque ouvrira le bal pour sceller nos voeux avant un "
-"cocktail d'honneur. Pour célébrer avec nous ce moment de bonheur, venez "
-"habillés de vos plus beaux costumes en rouge ou or.\n"
-"                Afin de mieux gérer ce beau jour de fête, merci de répondre "
-"à l'invitation avant le ... "
-msgstr ""
-"A secular ceremony will open the ball to seal our vows before a cocktail "
-"reception. To celebrate this moment of happiness with us, please come dress "
-"with your best suit in red or gold.\n"
-"To ensure the best management of this day, please reply to the invite before "
-"the ..."
-
-#: bigday/templates/home.html:134
+#: bigday/templates/home.html:184
 msgid "Je dis oui"
 msgstr "yes please"
 
-#: bigday/templates/home.html:145
-msgid " Voici la liste des hôtels aux alentour du domaine: "
-msgstr "Here's the available hotels arround the domain:"
+#: bigday/templates/home.html:198
+msgid "Hébergements"
+msgstr "Accomodations"
 
-#: bigday/templates/home.html:153 bigday/templates/home.html:160
-#: bigday/templates/home.html:184 bigday/templates/home.html:200
+#: bigday/templates/home.html:199
+msgid " Voici la liste des hôtels aux alentour du domaine: "
+msgstr "Here's the available hotels around the domain:"
+
+#: bigday/templates/home.html:207 bigday/templates/home.html:214
+#: bigday/templates/home.html:238 bigday/templates/home.html:254
 msgid "plus d'infos"
 msgstr "more info"
 
-#: bigday/templates/home.html:166
+#: bigday/templates/home.html:220
 msgid "(avant 11h ou après 17h)"
 msgstr "(before 11 am or after 5 pm)"
 
-#: bigday/templates/home.html:183
+#: bigday/templates/home.html:237
 msgid "Chambres d'hôtes capacité 10 pers"
 msgstr "Guest room (10 p. max)"
 
-#: bigday/templates/home.html:192
+#: bigday/templates/home.html:246
 msgid ""
 "Chambres d'hôte\n"
 "                        9 couchages"
-msgstr "Guests room\n 9 beds"
+msgstr ""
+"Guests room\n"
+" 9 beds"
 
-#: bigday/templates/home.html:212
+#: bigday/templates/home.html:266
 msgid ""
 " Liste\n"
 "                        des\n"
@@ -151,17 +239,17 @@ msgstr ""
 " of\n"
 " presents"
 
-#: bigday/templates/home.html:217
+#: bigday/templates/home.html:271
 msgid ""
 " Nous avons fait le choix de ne pas faire de liste de mariage car nous "
 "souhaitons partir en Chine pour notre Lune de Miel !\n"
-"                    Une urne sera mise à disposition le jour J. Si vous ne "
-"pouvez pas être présent le jour de notre mariage mais que vous souhaitez "
+"                    <p>Une urne sera mise à disposition le jour J. Si vous "
+"ne pouvez pas être présent le jour de notre mariage mais que vous souhaitez "
 "tout de même nous offrir un quelque chose, merci de nous contacter. "
 msgstr ""
 "We have decided to not make a presents list since we want to go to China for "
 "our honey moon!\n"
-"A ballot box will be disposed the d-day. If you can not attend to our "
+"<p>A ballot box will be disposed the d-day. If you can not attend to our "
 "wedding but still want to contribute to it, please contact us."
 
 #: venv/lib/python3.9/site-packages/django/contrib/messages/apps.py:15
@@ -1366,6 +1454,28 @@ msgstr ""
 #: venv/lib/python3.9/site-packages/django/views/templates/default_urlconf.html:249
 msgid "Connect, get help, or contribute"
 msgstr ""
+
+#~ msgid ""
+#~ "Vous êtes attendus à partir de 16h au château royal de Viver, Fontenay-"
+#~ "Trésigny (77)."
+#~ msgstr ""
+#~ "You are expected at 4pm at the Château royal de Viver, Fontenay-Trésigny "
+#~ "(77)."
+
+#~ msgid ""
+#~ " Une cérémonie laïque ouvrira le bal pour sceller nos voeux avant un "
+#~ "cocktail d'honneur. Pour célébrer avec nous ce moment de bonheur, venez "
+#~ "habillés de vos plus beaux costumes en rouge ou or.\n"
+#~ "                Afin de mieux gérer ce beau jour de fête, merci de <a "
+#~ "href=\"https://framaforms.org/rsvp-de-notre-mariage-angel-"
+#~ "benoit-1705788344\">répondre à l'invitation</a> avant le 28 février 2024 "
+#~ msgstr ""
+#~ "A secular ceremony will open the ball to seal our vows before a cocktail "
+#~ "reception. To celebrate this moment of happiness with us, please come "
+#~ "dress with your best suit in red or gold.\n"
+#~ "To ensure the best management of this day, please reply to <a "
+#~ "href=\"https://framaforms.org/rsvp-de-notre-mariage-angel-"
+#~ "benoit-1705788344\">the invite</a> before the 28th February of 2024."
 
 #~ msgid "Chambres d'hôte"
 #~ msgstr "Guest room"
