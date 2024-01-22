@@ -56,6 +56,11 @@
                     </a>
                 </li>
                 <li>
+                    <a class="page-scroll" href="#hotels">
+                        {% trans 'Hébergement' %}
+                    </a>
+                </li>
+                <li>
                     <a class="page-scroll" href="#gifts">
                         {% trans 'Liste des cadeaux' %}
                     </a>
@@ -78,6 +83,13 @@
             marions ! {% endblocktrans %}
         </div>
     </div>
+
+    <a href="#wedding" class="page-scroll">
+        <div class="arrow">
+            <span></span>
+        </div>
+    </a>
+
     <div class="subhead" id="wedding">
         <h2> {% blocktrans %} Réservez
                     votre
@@ -220,9 +232,11 @@
                     Une urne sera mise à disposition le jour J. Si vous ne pouvez pas être présent le jour de notre mariage mais que vous souhaitez tout de même nous offrir un quelque chose, merci de nous contacter. {% endblocktrans %}
                 </div>
 
-                <button class="btn btn-lg text-uppercase btn-primary ">
+                <a href="mailto:angel-benoit@quaidu13.fr?subject=Question pour le mariage du 7 juin" >
+                    <button class="btn btn-lg text-uppercase btn-primary ">
                     Contact
-                </button>
+                    </button>
+                </a>
             </div>
         </div>
     </div>
